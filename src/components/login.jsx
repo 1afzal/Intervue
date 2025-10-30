@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import nykaa from '../assets/nykaa.png';
-import paytm from '../assets/paytm.png';
+import paytm from '../assets/paytm.PNG';
 import rakuten from '../assets/rakuten.png';
 import { Button } from "@/components/ui/button";
 import {
