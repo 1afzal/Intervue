@@ -29,13 +29,13 @@ function HeroSection() {
             Request demo
           </button>
         </div>
-        {/* Banner Image */}
+        {/* Banner Image - hidden on mobile, visible from md and up */}
         <div className="w-full md:w-1/2 flex justify-center">
-          <div >
+          <div className="hidden md:block">
             <img
               src={banner}
               alt="banner"
-              className="w-= h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105"
+              className="h-full object-cover rounded-xl transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>
