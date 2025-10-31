@@ -2,9 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 :root {
-  --font-family-sora: 'Sora', sans-serif;
+  --font-family-sora: 'Sora';
 }
 
 body {
-  font-family: var(--font-family-sora);
+  font-family: 'Sora';
+}
+
+html {
+  font-family: 'Sora';
+}
+
+*, *::before, *::after {
+  font-family: 'Sora';
+}
+
+button, input, select, textarea {
+  font-family: 'Sora';
 }
