@@ -1,4 +1,3 @@
-# .github/workflows/ci.yml
 name: CI
 
 on:
@@ -14,7 +13,6 @@ jobs:
   build-and-test:
     name: Build & Test
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -42,11 +40,3 @@ jobs:
           git add ./build -f
           git commit -m "chore: update build [skip ci]" || echo "Nothing to commit"
           git push
-```
-
----
-
-## What it does
-```
-Push to main ──→ Install → Test → Build → Commit build/ back to repo
-Open a PR    ──→ Install → Test → Build (no push, just validation)
